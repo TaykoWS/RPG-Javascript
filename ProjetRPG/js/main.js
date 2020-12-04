@@ -278,12 +278,12 @@ function whoFirst(){
 
     if(ClasseStatSPEED > MonstreStatSPEED)
     {
-        $(".historique").html("<p>Player start first</p>");
+        $(".historique").html("<p>Player start first, wait 3s</p>");
         return 1
     }
     else
     {
-        $(".historique").html("<p>Monster start first</p>");
+        $(".historique").html("<p>Monster start first, wait 3s</p>");
         return 2
     }
 }
