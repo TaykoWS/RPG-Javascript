@@ -299,10 +299,10 @@ function playeratk(){
         //degat physique que le joueur reçoit = PV du joueur - Degat physique du monstre
         let mDamageR = MonstreStatPV - pDamage;
         MonstreStatPV = mDamageR;
-        $(".historique").html("<p>You use Normal Atk and you damage "+ pDamage +"PV of the monster </p>");
+        $(".historique").html(`<p>You use Atk Normal and you damage `+ pDamage+`PV of the monster <button id="continue">Continue</button></p>`);
         $("#getpv1").text(MonstreStatPV)
         if(MonstreStatPV>0){
-            monstreatk()
+            Continue();
         }
         else
         {
@@ -327,9 +327,9 @@ function playeratk(){
             MonstreStatPV = mDamageR
             $("#getmp").text(ClasseStatMP)
             $("#getpv1").text(MonstreStatPV)
-            $(".historique").html(`<p>You use Atk Magie and you damage `+ pDamage+`PV of the monster </p>`)
+            $(".historique").html(`<p>You use Atk Magie and you damage `+ pDamage+`PV of the monster <button id="continue">Continue</button></p>`)
             if(MonstreStatPV>0){
-                monstreatk()
+                Continue();
             }
             else
             {
@@ -371,12 +371,12 @@ function monstreatk(){
     }
     
 }
-function dodge(){
-    var random = Math.floor(Math.random() * Math.floor(2));
-    if(ClasseStatDODGE == "high") {
-
-    }
-
+function Continue(){
+    $("#continue").click(function(e)
+    {
+        e.preventDefault();
+        monstreatk();
+    })
 }
 //fonction pour attendre le temps 
 function sleep(ms) {
