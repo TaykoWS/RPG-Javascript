@@ -1,0 +1,219 @@
+body {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Noto Sans", sans-serif;
+}
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 23px;
+  margin: -50px 0 80px 0;
+  display: block;
+  text-align: center;
+}
+.box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.89);
+  border-radius: 3px;
+  padding: 70px 100px;
+}
+.input-container {
+  position: relative;
+  margin-bottom: 25px;
+}
+.input-container label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.input-container input {
+  border: 0;
+  border-bottom: 1px solid #555;
+  background: transparent;
+  width: 100%;
+  padding: 8px 0 5px 0;
+  font-size: 16px;
+  color: #fff;
+}
+.input-container input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e74c3c;
+}
+.input-container select {
+  border-radius: 5px;
+  margin-top: 30px;
+  padding-right: 50px;
+  padding-bottom: 7px;
+}
+.btn {
+  color: #fff;
+  background-color: #e74c3c;
+  outline: none;
+  border: 0;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+  top: -12px;
+  font-size: 12px;
+}
+.box-haut {
+  position: fixed;
+  top: 5%;
+  display: flex;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.box-left {
+  border: 2px solid white;
+  color: white;
+  padding-right: 100px;
+}
+.box-right {
+  color: white;
+  border: 2px solid white;
+  margin-left: 1100px;
+  padding-right: 100px;
+}
+.action {
+  border: 2px solid white;
+  position: fixed;
+  top: 85%;
+  color: white;
+  font-size: 15px;
+  margin-left: 500px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+#act button {
+  display: inline-flex;
+  border-radius: 5px;
+  font-size: 30px;
+  margin-right: 20px;
+}
+#start {
+  border-radius: 5px;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.historique {
+  color: white;
+  border: 2px solid white;
+  position: fixed;
+  top: 75%;
+  font-size: 20px;
+  margin-left: 500px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.hide {
+  display: none;
+}
+#open {
+  position: fixed;
+  right: 88%;
+  top: 21%;
+  text-decoration: none;
+  color: white;
+}
+#open1 {
+  position: fixed;
+  right: 12%;
+  text-decoration: none;
+  color: white;
+}
+#close {
+  text-decoration: none;
+  color: white;
+  position: fixed;
+  right: 33%;
+}
+#close1 {
+  text-decoration: none;
+  color: white;
+  position: fixed;
+  right: 33%;
+}
+#box-details {
+  background-color: powderblue;
+  color: black;
+  border: 2px solid white;
+  position: fixed;
+  top: 25%;
+  right: 33%;
+  padding-right: 370px;
+}
+#box-details1 {
+  background-color: powderblue;
+  color: black;
+  border: 2px solid white;
+  position: fixed;
+  top: 25%;
+  right: 33%;
+  padding-right: 370px;
+}
+#getname {
+  color: white;
+}
+#getchoix {
+  color: black;
+}
+#player {
+  z-index: 1;
+  height: 250px;
+  width: 250px;
+  position: fixed;
+  top: 30%;
+  left: 18%;
+}
+.store {
+  color: white;
+  border: 2px solid white;
+  position: fixed;
+  top: 35%;
+  left: 1%;
+}
+#monster {
+  z-index: 1;
+  height: 250px;
+  width: 250px;
+  position: fixed;
+  top: 30%;
+  left: 70%;
+}
+#fuir a {
+  text-decoration: none;
+  color: black;
+}
+#buy {
+  border-radius: 5px;
+  font-size: 30px;
+  margin-left: 50px;
+}
+#here {
+  color: black;
+  text-decoration: none;
+}
